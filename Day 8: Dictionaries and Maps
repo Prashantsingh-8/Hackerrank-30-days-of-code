@@ -1,0 +1,20 @@
+//python 3
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+num=int(input())
+phoneBook={}
+
+for i in range(0,num):
+    data=str(input()).split(' ')
+    name=data[0]
+    index=int(data[1])
+    phoneBook[name]=index
+
+while True: 
+    try: #read until there is no query
+        name=str(input()) 
+        if name in phoneBook:
+            print('{}={}'.format(name,phoneBook[name])) 
+        else: 
+            print('Not found') 
+    except: 
+        break # quit()

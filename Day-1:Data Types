@@ -1,0 +1,11 @@
+string str {};
+    int a;
+    double b{0.0};
+    cin>>a;
+    cin>>b;
+    cin.ignore();
+    // to ignore the new line character (enter key) after the double input 
+    getline(cin,str);
+    cout<<a+i<<endl;
+    cout<<fixed<<setprecision(1)<<b+d<<endl;
+    cout<<s + str ;   

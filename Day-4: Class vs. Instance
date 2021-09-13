@@ -1,0 +1,15 @@
+class Person{
+public:
+   int age ;
+   Person(int initialAge);
+   void amIOld();
+   void yearPasses();
+};
+Person::Person(int initialAge){
+  if(initialAge==NULL || initialAge<0){
+      age=0;
+      cout<<"Age is not valid, setting age to 0.\n";
+  }else {
+      age=initialAge;
+  }
+}
